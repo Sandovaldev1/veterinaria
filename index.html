@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Veterinaria</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navigation-wrap navbar">
+            <div class="container-fluid container-logo">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" alt="logo de la imagen" class="img-fluid">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="menu" aria-expanded="false" aria-label="menú hamburguer">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="true" href="#home">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#nosotros">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#mision">Nuestra misión</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#clinica">Nuestra clínica</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="home">
+        <!--Carousel-->
+        <section class="container-fluid sectionCarousel">
+            <div id="carousel1" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <!--Slide 1-->
+                    <div class="carousel-item active" data-bs-interval="5000">
+                        <div class="container">
+                            <h2>Veterinaria Huellitas</h2>
+                            <div class="line"></div>
+                            <p>
+                                Bienvenido a "Veterinaria Huellitas", tu veterinaria de confianza para el cuidado
+                                integral de tus adorables compañeros peludos. Nos enorgullecemos de ofrecer un servicio
+                                cálido y profesional para garantizar la salud y el bienestar de tus queridas mascotas.
+                            </p>
+                            <a href="#nosotros">Ver más</a>
+                        </div>
+                    </div>
+                    <!--Slide 2-->
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <div class="container">
+                            <h2>Nos comprometemos</h2>
+                            <div class="line"></div>
+                            <p>Nos enorgullecemos de ofrecer un servicio cálido y profesional para garantizar la salud y
+                                el bienestar de tus queridas mascotas.</p>
+                        </div>
+                    </div>
+                    <!--Slide 3-->
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <div class="container">
+                            <h2>Amamos lo que hacemos</h2>
+                            <div class="line"></div>
+                            <p>Entendemos lo importantes que son tus mascotas para ti y tu familia, por lo que nos
+                                esforzamos por crear un ambiente relajado y acogedor para ellos. Nuestro personal amante
+                                de los animales se asegura de que cada visita sea lo más cómoda y libre de estrés
+                                posible.</p>
+                            <a href="#slogan">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </section>
+    </div>
+
+    <!--Nosotros-->
+    <section id="nosotros" class="container-fluid nosotros py-5">
+        <div class="container text-center">
+            <h4 class="pb-4">Nosotros</h4>
+            <p>
+                Como parte de nuestra filosofía, promovemos el amor y el respeto hacia todos los seres vivos. Nos preocupamos por el bienestar animal y trabajamos en estrecha colaboración con organizaciones locales para promover la adopción responsable y ayudar a animales desfavorecidos a encontrar un hogar amoroso. 
+                Valoramos cada vida animal y creemos en la importancia de la educación y la prevención. Buscamos empoderar a los dueños con conocimientos y recursos para cuidar adecuadamente de sus mascotas en casa y crear un ambiente seguro y enriquecedor para ellos.
+            </p>
+        </div>
+    </section>
+
+    <!--Instalaciones-->
+    <section id="clinica" class="container-fluid instalaciones">
+        <h4 class="text-center">Nuestras instalaciones</h4>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="img/instalacion1.jpg" alt="" class="img-fluid py-4">
+                    <p>Nuestra sala de consulta.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/instalacion2.jpg" alt="" class="img-fluid py-4">
+                    <p>Tenemos la mejor atención al cliente.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/instalacion3.jpg" alt="" class="img-fluid py-4">
+                    <p>Tenemos lo último en tecnología.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="img/instalacion4.jpg" alt="" class="img-fluid py-4">
+                    <p>Nuestro equipo.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/instalacion5.jpg" alt="" class="img-fluid py-4">
+                    <p>Contamos con un laboratorio de punta.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/instalacion6.jpg" alt="" class="img-fluid py-4">
+                    <p>Tenemos los mejores profesionales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Seccion Mision-->
+    <section id="mision" class="container-fluid text-center py-5 mision">
+        <div class="container">
+            <h4>Nuestra misión</h4>
+            <p>
+                En Veterinaria Huellitas, nuestra misión es brindar un cuidado excepcional y compasivo a cada una de las mascotas que llegan a nuestras puertas. Nos comprometemos a fomentar una relación de confianza con los dueños de mascotas y a convertirnos en el hogar de cuidado y cariño para sus adorables compañeros.
+            </p>
+        </div>
+    </section>
+
+    <!--Acordion-->
+    <section class="container py-5 sectionAccordion">
+        <h2 class="text-center pb-3">Preguntas frecuentes</h2>
+        <div class="accordion accordion-flush" id="accordionSection">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="accordion-item pb-4">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#accordionOne" aria-expanded="false" aria-controls="accordionOne">
+                                ¿Donde estamos ubicados?
+                            </button>
+                        </h2>
+                        <div id="accordionOne" class="accordion-collapse collapse" data-bs-parent="#accordionSection">
+                            <div class="accordion-body">
+                                <p>Tenemos sedes en 3 puntos importantes de la región.</p>
+                                <ol class="list-group list-group-numbered">
+                                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                                        <div class="ms-2 me-auto">
+                                            <div class="fw-bold">San José</div>
+                                            Por el parque La Paz.
+                                        </div>
+                                        <span class="badge bg-primary rounded-pill">1</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                                        <div class="ms-2 me-auto">
+                                            <div class="fw-bold">Cartago</div>
+                                            Detrás de la Basílica Los Ángeles.
+                                        </div>
+                                        <span class="badge bg-primary rounded-pill">2</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                                        <div class="ms-2 me-auto">
+                                            <div class="fw-bold">Puntarenas</div>
+                                            Al frente del Palí.
+                                        </div>
+                                        <span class="badge bg-primary rounded-pill">3</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="accordion-item pb-4">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#accordionTwo" aria-expanded="false" aria-controls="accordionTwo">
+                                ¿Cuales son nuestros productos destacados?
+                            </button>
+                        </h2>
+                        <div id="accordionTwo" class="accordion-collapse collapse" data-bs-parent="#accordionSection">
+                            <div class="accordion-body border">
+                                <div class="row border text-center pb-3 mb-3">
+                                    <div class="col-lg-6">
+                                        <img src="img/producto1.jpg" class="img-fluid rounded-3"
+                                            alt="Foto envío productos">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h5>Vida de Perro - Cama para Mascotas</h5>
+                                        <p>Cama Para Perros Vida De Perro, tiene todo lo que necesitas para tu querida
+                                            mascota; este rodeado de espacio en el reposacabezas y esquinas acogedoras
+                                            para cavar. Con nuestro nuevo diseño y gama de colores, se adapta mejor al
+                                            interés de tu mascota y la decoración de tu hogar.</p>
+                                        <span class="text-center fw-bold">30.000,00 ₡</span>
+                                    </div>
+                                </div>
+
+                                <div class="row border text-center pb-3 mb-3">
+                                    <div class="col-lg-6">
+                                        <img src="img/producto2.jpg" class="img-fluid rounded-3"
+                                            alt="Foto envío productos">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h5>Cama Comfort Large</h5>
+                                        <p>Bríndele a su mejor amigo el apoyo que necesita con una lujosa y acogedora
+                                            cama de perro ortopédica. Con un núcleo de espuma profundo que alivia los
+                                            puntos de presión y apoya las articulaciones para que su mascota pueda
+                                            disfrutar un sueño profundo y reparador.</p>
+                                        <span class="fw-bold">44.999,99 ₡</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="accordion-item pb-4">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#accordionFour" aria-expanded="false" aria-controls="accordionFour">
+                                ¿Tienen descuento en sus servicios?
+                            </button>
+                        </h2>
+                        <div id="accordionFour" class="accordion-collapse collapse" data-bs-parent="#accordionSection">
+                            <div class="accordion-body  text-center ">
+                                <p>¡Gran noticia para ti y tus adorables compañeros peludos! En "Veterinaria Huellitas"
+                                    estamos emocionados de ofrecerte una increíble promoción: ¡descuentos especiales en
+                                    nuestros servicios veterinarios!</p>
+                                <div class="container">
+                                    <img src="img/instalacion2.jpg" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item pb-4">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#accordionSix" aria-expanded="false" aria-controls="accordionSix">
+                                ¿Tienen laboratorios especializados?
+                            </button>
+                        </h2>
+                        <div id="accordionSix" class="accordion-collapse collapse" data-bs-parent="#accordionSection">
+                            <div class="accordion-body  text-center ">
+                                <p>Contamos con una amplia gama de tecnologías avanzadas diseñadas para mejorar el
+                                    diagnóstico, tratamiento y bienestar general de tus queridos animales</p>
+                                <div class="ratio ratio-16x9">
+                                    <video src="vd/video1.mp4" muted controls autoplay></video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <p class="text-center">
+                Veterinaria Huellitas - Todos los derechos reservados. &copy;
+            </p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+    <script src="https://kit.fontawesome.com/85576dcff4.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

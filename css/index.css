@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Estilos fuente*/
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300&family=Montserrat:wght@100;400&family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap');
+
+h4{
+    font-weight: 500;
+    font-size: 45px;
+}
+
+p{
+    font-family: 'Geologica', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navigation-wrap {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 10000;
+    transition: all 0.3s ease-out;
+}
+
+.navigation-wrap .nav-item {
+    padding: 0 10px;
+    transition: all 0.3s linear;
+}
+.navbar-brand img {
+    width: 127px;
+}
+.navbar-toggler{
+    border: none;
+}
+/* Indicamos que cuando se haga scroll cambie de color el icono menu hamburguesa */
+.navigation-wrap.scroll-on .navbar-toggler i{
+    color: #000;
+}
+.navbar-toggler i{
+    color: #fff;
+    font-size: 20px;
+    border: none;
+}
+/* Quitamos estilos que trae por defecto al presionar el menu hamburguesa */
+.navbar-toggler:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+.nav-link {
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: #fff;
+    margin: 0 10px;
+}
+.nav-link:hover {
+    color: #0b80ee;
+}
+
+
+/* cuando esta responsivo, se despliegan las opciones y las centramos */
+.navbar-collapse{
+    text-align: center;
+}
+
+.navigation-wrap.scroll-on {
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 28px 0 rgb(0, 0, 0, 0.09);
+    transition: all 0.15s ease-in-out 0s;
+}
+
+.navigation-wrap.scroll-on .nav-link {
+    color: #000;
+}
+
+.navigation-wrap.scroll-on .nav-link:hover
+{
+    color: #0b80ee;
+}
+
+
+
+
+
+.seccion2 .icon{
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+    background-color: #ffd433;
+    width: 110px;
+    padding: 25px;
+    color: #000;
+}
+
+/*Estilos Carousel*/
+.sectionCarousel{
+    /*Colocamos un alto de 100vh que hara que se ajuste al 100% del alto de la pantalla del dispositivo que accedamos*/
+    height: 100vh;
+}
+
+/*Hace que el contenedor del carousel ocupe todo el espacio disponible en la pantalla, independientemente del tamaño de la pantalla o del contenido del contenido del carousel, lo que permite una mejor experiencia de usuario y un diseño responsivo*/
+
+.sectionCarousel .carousel,
+.sectionCarousel .carousel-inner,
+.sectionCarousel .carousel-item,
+.sectionCarousel .carousel-item::before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+/*Con la pseudo clase nth:nth-child() accedemos a cada div con la clase carousel-item*/
+.sectionCarousel .carousel-item:nth-child(1){
+    background-image: url("../img/imagen1.jpeg");
+}
+.sectionCarousel .carousel-item:nth-child(2){
+    background-image: url("../img/imagen2.jpeg");
+}
+.sectionCarousel .carousel-item:nth-child(3){
+    background-image: url("../img/imagen3.jpeg");
+}
+
+.sectionCarousel .carousel-item{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+    align-items: end;
+}
+
+.sectionCarousel .container{
+    text-align: center;
+    background: #fff;
+    padding: 30px 0;
+    margin-bottom: 50px;
+    border-top: 4px solid #0b80ee;
+}
+
+.sectionCarousel h2{
+    color: #000;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.sectionCarousel .line{
+    border: 2px solid #0b80ee;
+    width: 10%;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.sectionCarousel p{
+    padding: 20px 0;
+    white-space: pre-line;
+    line-height: 27px;
+    color: #000;
+}
+
+/*Le colocamos una opacidad de 1 para que el boton de "siguiente" y "anterior" no se vea con una transparencia*/
+.carousel-control-next,
+.carousel-control-prev{
+    opacity: 1;
+}
+
+/* le añadimos estilos al boton anterior y siguiente*/
+.sectionCarousel .carousel-control-next-icon,
+.sectionCarousel .carousel-control-prev-icon{
+    font-size: 30px;
+    background: #0b80ee56;
+    border-radius: 55px;
+    transition: 0.3s;
+    color: #f7f5f5;
+    width: 54px;
+    height: 54px;
+    margin-bottom: 35px;
+    /*le indicamos que el contenido que tenga por dentro con la propiedad display:flex sea centrado totalmente*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Le aplicamos hover al icono de anterior y siguiente y su respectivo fondo*/
+.sectionCarousel .carousel-control-next-icon:hover,
+.sectionCarousel .carousel-control-prev-icon:hover{
+    background: #f0efec;
+    color: #1c1c1c;
+}
+
+/*Le damos estilo a los indicadores de abajo*/
+.sectionCarousel .carousel-indicators button{
+    cursor: pointer;
+    border: 0;
+    width: 12px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+/*Cuando el indicador del carousel este activo, aplique los siguientes estilos*/
+.sectionCarousel .carousel-indicators button.active{
+    background: #0b80ee;
+}
+
+/*Estilos del boton*/
+.sectionCarousel .carousel-item a{
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 14px 32px;
+    border-radius: 4px;
+    color: #ffffff;
+    background: #0b80ee;
+}
+
+
+.nosotros p,
+.mision p{
+    font-size: 25px;
+    white-space:pre-line;
+    font-family: 'Geologica', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.mision{
+    width: 100%;
+    margin-top: 30px;
+    background-image: url("../img/imagen3.jpeg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:initial;
+    height: 500px;
+    box-shadow: inset 000 2000px rgba(0, 0, 0, 0.4);
+    color: #fff;
+}
+
+/*Seccion clinica*/
+.instalaciones p{
+    margin-top: -15px;
+    font-size: 18px;
+}
+
+/*footer*/
+footer{
+    padding: 20px;
+    background-color: #1c1c1c;
+    color: #fff;
+}
+/* seccion accordion */
+.sectionAccordion h2 {
+    font-size: 45px;
+}
+.sectionAccordion p {
+    font-size: 20px;
+}
+.sectionAccordion .accordion-button {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    background-color: #0084ffcc;
+}
+/* cuando se abre el accordion */
+.sectionAccordion .accordion-button:not(.collapsed) {
+    font-size: 20px;
+    color: #fff;
+    background-color: #3a9cf8d5;
+    font-weight: 400;
+}
+.sectionAccordion .accordion-button:focus {
+    box-shadow: none;
+}
+
+/* se cambia el color de la flecha del accordion al colapsar, se coloca codigo hexadecimal para el  color y apartir del %23...*/
+.sectionAccordion .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+/* se cambia el color de la flecha del accordion sin colapsar, se coloca codigo hexadecimal para el  color y apartir del %23...*/
+.sectionAccordion .accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.sectionAccordion .accordion-body img {
+    width: 580px;
+}
+.sectionAccordion .accordion-body video {
+    border-radius: 5px;
+}
+
+/*Dispositivos moviles como Iphone 5 */
+@media (min-width: 320px) and (max-width: 568px){
+    .navbar .navbar-collapse {
+        /* Ocultar el contenido de la barra de navegación por defecto */
+       background-color: #fff; /* Fondo blanco */
+       /* Otros estilos específicos para la barra desplegada aquí */
+     }
+   
+     .navbar.is-active .navbar-collapse {
+         display: block; /* Mostrar el contenido de la barra de navegación cuando se despliega */
+         
+     }
+     .nav-link{
+         color: #000;
+     }
+     .sectionCarousel .container {
+        margin: 80px 15px;
+    }
+
+    .sectionCarousel h2 {
+        font-size: 20px;
+    }
+
+    .sectionCarousel p {
+        display: none;
+    }
+
+    .sectionCarousel .line {
+        margin-bottom: 25px;
+    }
+
+    .sectionCarousel .carousel-item a {
+        padding: 8px 12px;
+    }
+
+    .container-logo img{
+        width: 70px;
+    }
+    .nosotros p,
+    .mision p{
+        white-space:initial;
+        font-size: 18px;
+        padding-top: 15px;
+    }
+
+    .mision{
+        height: 500px;
+        background-position: center;
+    }
+     }
